@@ -1,5 +1,5 @@
 body {
-  font-family: Arial narrow, sans-serif;
+  font-family: 'Rancho', cursive;
   background-color: #FFFFFE;
   color: #273D57;
   margin: 0;
@@ -16,47 +16,35 @@ body {
   text-align: justify;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 #images {
-  width: 75%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
+  padding: 2em;
 }
 
 #entete {
   background-image: url(wave.png);
   background-size: cover;
-  padding: 1em;
-}
-
-#ondebleue {
-  width: 33%;
+  padding: 6em;
+  text-align: center;
 }
 
 h3 {
   text-align: center;
-  width: 25%;
-  font-size: 1.8em;
+  font-size: 2.5em;
   font-style: italic;
   font-weight: normal;
 }
 
 #logo {
-  width: 67%;
+  width: 30%;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 section li {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 section a {
@@ -76,14 +64,20 @@ section a:hover {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin: 0;
+  z-index: 1;
 }
 
 h2 {
   text-align: center;
-  color: #FF9A00;
+  color: #037FBD;
   font-weight: normal;
+  font-size: 2em;
   margin: 2em;
   position: relative;
+}
+
+#qsn {
+  color: #FF9A00;
 }
 
 nav ul {
@@ -95,6 +89,7 @@ nav ul {
 
 nav ul a {
   text-decoration: none;
+  font-size: 1.2em;
 }
 
 #menu a {
@@ -125,7 +120,7 @@ section {
 }
 
 #aboutus {
-  background-image: url(earth.jpg);
+  background-image: url(earth.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 1em;
@@ -154,41 +149,44 @@ footer a:hover {
   position: absolute;
   top: -4em;
 }
-
+/*
 @media screen and (max-width: 1268px) {
-  #aboutus {
-    background-image: url(earth.png);
-  }
-}
+
+} */
 
 @media screen and (max-width: 1000px) {
   .corps {
     width: 90%;
   }
   h3 {
-    font-size: 1.2em;
+    font-size: 1.8em;
+  }
+  #logo {
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 601px) {
+  #logo {
+    width: 60%;
+  }
+  #entete {
+    padding: 1em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
   h3 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   p {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   section li {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   #container {
     text-align: left;
-  }
-  #images {
-    flex-direction: column;
-    width: 50%;
-  }
-  h3 {
-    width: 50%;
   }
   nav ul {
     flex-flow: row wrap;
