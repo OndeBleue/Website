@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title>L'Onde bleue</title>
     <link rel="stylesheet" media="screen" type="text/css" href="Ondebleue.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|BenchNine" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -15,24 +15,22 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.2/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </head>
   <body>
-    <nav>
+    <nav class="main-menu">
       <ul id="menu">
-        <li><a href="#ancremani">Manifeste</a></li>
-        <li><a href="#ancrecctm">Concrètement</a></li>
-        <li><a href="#ancrecharte">Charte</a></li>
-        <li><a href="#ancreqsn">Qui sommes-nous ?</a></li>
+        <li><a data-scroll href="#ancremani">Manifeste</a></li>
+        <li><a data-scroll href="#ancrecctm">Concrètement</a></li>
+        <li><a data-scroll href="#ancrecharte">Charte</a></li>
+        <li><a data-scroll href="#ancreqsn">Qui sommes-nous ?</a></li>
         <li><a href="https://www.onde-bleue.fr/app" target="_blank">Je rejoins</a></li>
       </ul>
     </nav>
     <div id="container">
-        <header class="corps">
-          <div id="images">
-             <!-- <img id="ondebleue" src="ondebleue.png" alt="l'Onde bleue"> -->
-            <img id="logo" src="logo_onde_bleue.png" alt="logo de l'Onde bleue">
-          </div>
-        </header>
       <div id="entete">
         <h3>La planète, notre avenir, ça passe par moi</h3>
       </div>
@@ -41,19 +39,21 @@
         <p>Effondrement de la biodiversité, pollution, sécheresse, incendie, inondation,  famine, raréfaction des ressources : voilà le cinglant constat d’aujourd’hui et cela va s’amplifier.  Plus personne n’a l’excuse de ne pas savoir.
           <br><br>Êtres  vivants, nous sommes tous interdépendants nous vivons sur la même planète aujourd’hui si menacée. En tant qu’êtres humains, nous sommes tous concernés et responsables des changements actuels et ceux à venir. Nous n’avons plus le temps d’être optimiste ou pessimiste, l’urgence est à l’action. Nous sommes tous responsables de ce que nous faisons et de ce que nous laissons faire. Impliquons-nous dès maintenant !
           <br><br>La plupart des politiques et des lobbies ne prendront d’eux même aucune mesure suffisante tant qu’ils ne seront pas touchés personnellement par l’effondrement écologique, social, énergétique et économique. Il est de notre responsabilité en tant que citoyen d’exiger de passer d’un système consumériste, destructeur, hiérarchique à un système sobre, coopératif et respectueux de toute vie.
-          <br><br>Gandhi disait « Soyez le changement que vous voulez voir dans le monde. »
-          <br><br>Les questions qui se posent sont donc : À quoi je souhaite contribuer ? Dans quel monde je souhaite vivre demain ?
+        </p>
+        <blockquote><p>Gandhi disait « Soyez le changement que vous voulez voir dans le monde. »</p></blockquote>
+        <p>Les questions qui se posent sont donc : À quoi je souhaite contribuer ? Dans quel monde je souhaite vivre demain ?
           <br>En tant qu’individu, je suis responsable, j’ai une voix et j’ai un choix à faire. Est-ce que je souhaite être un personne ayant laissé faire ou ayant agi ?
           <br><br>Si tu souhaites agir, rejoins nous ! Devenons une onde bleue !
           <br>Une onde bleue en hommage à notre belle planète.
           <br>Une onde bleue collective unie pour changer le modèle de société dans lequel nous vivons quotidiennement de manière consciente et paisible.
           <br><br>L’Onde bleue se propage tous les dimanches de 19h à 19h10 en bas de chez toi. Pour cela, nous t’invitons à te rendre visible en portant un vêtement bleu et en affichant, comme bon te semble, ce logo. Profite de ce temps pour échanger avec tes voisins, pour réfléchir ensemble à une action à mettre en place dans votre quartier ou pour simplement être là. Cela t’appartient. Ensuite, nous te proposons d’incarner certaines actions de l’Onde bleue proposées dans la charte. Le reste se construira tous ensemble.
         </p>
-        <p>Je rejoins, j’incarne, je propage l'Onde bleue.</p>
+        <blockquote><p>Je rejoins, j’incarne, je propage l'Onde bleue.</p></blockquote>
       </section>
       <div id="concretely">
         <section class="corps" id="concretement">
           <h2><span id="ancrecctm"></span>Concrètement</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </div>
       <section class="corps" id="charte">
