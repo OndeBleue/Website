@@ -40,7 +40,7 @@ nav.main-menu ul {
 }
 
 #entete {
-  background-image: url("lance-asper-278037-unsplash.jpg");
+  background: center no-repeat url("lance-asper-278037-unsplash.jpg");
   background-size: cover;
   padding: 6em;
   text-align: center;
@@ -137,8 +137,7 @@ section {
 }
 
 #concretely {
-  background-image: url(drop.jpg);
-  background-repeat: no-repeat;
+  background: center no-repeat url('drop.jpg');
   background-size: cover;
   padding-top: 4em;
   padding-bottom: 1em;
@@ -151,8 +150,7 @@ section {
 }
 
 #aboutus {
-  background-image: url(earth.png);
-  background-repeat: no-repeat;
+  background: right no-repeat url('earth.png');
   background-size: cover;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -161,6 +159,7 @@ section {
 #quisommesnous {
   text-align: right;
   color: #EAF4F7;
+  font-size: 10pt;
 }
 
 footer {
@@ -186,6 +185,14 @@ footer a:hover {
 } */
 
 @media screen and (max-width: 1000px) {
+  nav.main-menu ul {
+    background: 10px / contain no-repeat url("logo_onde_bleue_notext.png");
+  }
+
+  #menu a {
+    padding: 0 1em;
+  }
+
   .corps {
     width: 90%;
   }
@@ -194,6 +201,15 @@ footer a:hover {
   }
   #logo {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #menu a {
+    padding: 0 .5em;
+  }
+  #aboutus {
+    background-position-x: center;
   }
 }
 
