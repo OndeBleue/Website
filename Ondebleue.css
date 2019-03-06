@@ -11,6 +11,10 @@ nav.main-menu ul {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
 }
 
+.menu-button {
+  display: none;
+}
+
 #container {
   margin-top: 4em;
 }
@@ -275,9 +279,48 @@ footer a:hover {
   }
 }
 
+@keyframes menu-appear {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 740px) {
-  #menu a {
-    padding: 0 .5em;
+  #menu {
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    flex-direction: column;
+    display: none;
+    animation: menu-appear 0.5s ease;
+  }
+  .menu-button {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0.5em 0.7em;
+    font-size: 2em;
+    background-color: white;
+    border: 1px solid;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  #container {
+    margin-top: 0;
+  }
+  nav.main-menu ul {
+    background: center 10px no-repeat url('logo_onde_bleue.png');
+    background-size: 50%;
+  }
+  nav.main-menu ul li {
+    font-size: 18pt;
+    border-bottom: 1px solid #cfcfcf;
+    margin: 2em 2em 0;
   }
   #aboutus {
     background-position-x: center;
