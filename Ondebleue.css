@@ -20,7 +20,7 @@ nav.main-menu ul {
 }
 
 .corps {
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
@@ -141,20 +141,27 @@ section {
 }
 
 #concretely {
-  background: center no-repeat url('drop.jpg');
+  background: center no-repeat url('max-mckinnon-100429-unsplash.jpg');
   background-size: cover;
   padding-top: 4em;
   padding-bottom: 1em;
   min-height: 40em;
   color: white;
+  text-shadow: 1px 1px black;
+}
+#concretely li {
+  margin-bottom: 1em;
 }
 
 #charte ul {
   margin-left: 2em;
 }
+#charte i.fas {
+  margin-right: 1em;
+}
 
 #aboutus {
-  background: right no-repeat url('earth.png');
+  background: right no-repeat url('earth.jpg');
   background-size: cover;
   padding-top: 1em;
   padding-bottom: 1em;
