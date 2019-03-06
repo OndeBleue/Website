@@ -154,12 +154,22 @@ section {
   background-size: cover;
   padding-top: 1em;
   padding-bottom: 1em;
+  min-height: 800px;
 }
 
 #quisommesnous {
-  text-align: right;
+  text-align: left;
   color: #EAF4F7;
   font-size: 10pt;
+  width: 95%
+}
+
+#quisommesnous .circle {
+  height: 800px;
+  float: left;
+  width: 100%;
+  margin-top: -153px;
+  shape-outside: circle(50vw at 16vw 38vw);
 }
 
 footer {
@@ -179,10 +189,71 @@ footer a:hover {
   position: absolute;
   top: -4em;
 }
-/*
-@media screen and (max-width: 1268px) {
 
-} */
+@media screen and (max-width: 2000px) {
+  #quisommesnous .circle {
+    shape-outside: circle(51vw at 15vw 44vw);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #quisommesnous .circle {
+    shape-outside: circle(57vw at 11vw 52vw);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #quisommesnous .circle {
+    shape-outside: circle(57vw at 8vw 52vw);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #quisommesnous .circle {
+    shape-outside: circle(58vw at 4vw 54vw);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #quisommesnous .circle {
+    shape-outside: circle(59vw at 0vw 56vw);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #quisommesnous .circle {
+    shape-outside: circle(60vw at -5vw 58vw);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #quisommesnous .circle {
+    shape-outside: circle(64vw at -14vw 62vw);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #quisommesnous .circle {
+    shape-outside: circle(70vw at -30vw 67vw);
+  }
+  #quisommesnous {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #quisommesnous .circle {
+    shape-outside: circle(70vw at -38vw 71vw);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #quisommesnous .circle {
+    shape-outside: circle(70vw at -48vw 77vw);
+  }
+}
+
 
 @media screen and (max-width: 1000px) {
   nav.main-menu ul {
@@ -210,6 +281,9 @@ footer a:hover {
   }
   #aboutus {
     background-position-x: center;
+  }
+  #quisommesnous .circle {
+    display: none;
   }
 }
 
