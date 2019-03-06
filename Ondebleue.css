@@ -123,6 +123,10 @@ nav ul a {
   padding-right: 1.5em;
 }
 
+#menu a i.fas {
+  margin-right: 0.3em;
+}
+
 #menu a:hover {
   text-decoration: underline;
 }
