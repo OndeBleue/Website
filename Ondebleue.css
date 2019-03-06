@@ -294,6 +294,7 @@ footer a:hover {
     left: 0;
     bottom: 0;
     width: 50%;
+    min-width: 256px;
     flex-direction: column;
     display: none;
     animation: menu-appear 0.5s ease;
@@ -309,6 +310,7 @@ footer a:hover {
     border: 1px solid;
     opacity: 0.8;
     cursor: pointer;
+    z-index: 2;
   }
   #container {
     margin-top: 0;
