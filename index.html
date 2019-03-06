@@ -18,10 +18,13 @@
     <meta name="msapplication-config" content="icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.2/dist/smooth-scroll.polyfills.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8020731-9"></script> <!-- Global site tag (gtag.js) - Google Analytics -->
     <script>
+      // scroll to anchors
       new SmoothScroll('a[href*="#"]', {
         offset: 130
       });
+      // show/hide small devices menu
       function toggleMenu() {
         const isShown = (document.getElementById('menu').style.display === 'flex');
         if (isShown) {
@@ -30,6 +33,12 @@
           document.getElementById('menu').style.display = 'flex';
         }
       }
+      // google analytics
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8020731-9');
     </script>
   </head>
   <body>
