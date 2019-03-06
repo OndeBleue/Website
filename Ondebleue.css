@@ -184,7 +184,7 @@ section {
   float: left;
   width: 100%;
   margin-top: -153px;
-  shape-outside: circle(50vw at 16vw 38vw);
+  shape-outside: circle(35vw at 27vw 32vw);
 }
 
 footer {
@@ -205,27 +205,52 @@ footer a:hover {
   top: -4em;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (min-width: 2207px) {
   #quisommesnous .circle {
-    shape-outside: circle(51vw at 15vw 44vw);
+    shape-outside: circle(33vw at 28vw 30vw);
+  }
+}
+
+@media screen and (min-width: 2341px) {
+  #quisommesnous .circle {
+    shape-outside: circle(30vw at 32vw 28vw);
+  }
+}
+
+@media screen and (min-width: 2575px) {
+  #quisommesnous .circle {
+    shape-outside: circle(29vw at 33vw 27vw);
+  }
+}
+
+@media screen and (min-width: 2664px) {
+  #quisommesnous .circle {
+    shape-outside: circle(772px at 34vw 688px);
+  }
+}
+
+
+@media screen and (max-width: 2050px) {
+  #quisommesnous .circle {
+    shape-outside: circle(37vw at 26vw 34vw);
   }
 }
 
 @media screen and (max-width: 1600px) {
   #quisommesnous .circle {
-    shape-outside: circle(57vw at 11vw 52vw);
+    shape-outside: circle(48vw at 17vw 45vw);
   }
 }
 
 @media screen and (max-width: 1500px) {
   #quisommesnous .circle {
-    shape-outside: circle(57vw at 8vw 52vw);
+    shape-outside: circle(51vw at 12vw 46vw);
   }
 }
 
 @media screen and (max-width: 1400px) {
   #quisommesnous .circle {
-    shape-outside: circle(58vw at 4vw 54vw);
+    shape-outside: circle(55vw at 6vw 52vw);
   }
 }
 
