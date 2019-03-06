@@ -19,7 +19,9 @@
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.2/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-      new SmoothScroll('a[href*="#"]');
+      new SmoothScroll('a[href*="#"]', {
+        offset: 130
+      });
       function toggleMenu() {
         const isShown = (document.getElementById('menu').style.display === 'flex');
         if (isShown) {
@@ -33,10 +35,10 @@
   <body>
     <nav class="main-menu">
       <ul id="menu">
-        <li><a data-scroll href="#ancremani">Manifeste</a></li>
-        <li><a data-scroll href="#ancrecctm">Concrètement</a></li>
-        <li><a data-scroll href="#ancrecharte">Charte</a></li>
-        <li><a data-scroll href="#ancreqsn">Qui sommes-nous ?</a></li>
+        <li><a data-scroll href="#le-manifeste">Manifeste</a></li>
+        <li><a data-scroll href="#et-concretement">Concrètement</a></li>
+        <li><a data-scroll href="#la-charte">Charte</a></li>
+        <li><a data-scroll href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
         <li><a href="https://www.onde-bleue.fr/app" target="_blank"><i class="fas fa-mobile-alt"></i> L'application</a></li>
       </ul>
       <div class="menu-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
@@ -46,7 +48,7 @@
         <h3>La planète, notre avenir, ça passe par moi</h3>
       </div>
       <section class="corps" id="manifeste">
-        <h2><span id="ancremani"></span>Manifeste</h2>
+        <h2><span id="le-manifeste"></span>Manifeste</h2>
         <p>Effondrement de la biodiversité, pollution, sécheresse, incendie, inondation,  famine, raréfaction des ressources : voilà le cinglant constat d’aujourd’hui et cela va s’amplifier.  <strong>Plus personne n’a l’excuse de ne pas savoir.</strong>
           <br><br>Êtres  vivants, nous sommes tous interdépendants nous vivons sur la même planète aujourd’hui si menacée. En tant qu’êtres humains, <strong>nous sommes tous concernés</strong> et responsables des changements actuels et ceux à venir. Nous n’avons plus le temps d’être optimiste ou pessimiste, <strong>l’urgence est à l’action</strong>. Nous sommes tous responsables de ce que nous faisons et de ce que nous laissons faire. Impliquons-nous dès maintenant !
           <br><br>La plupart des politiques et des lobbies ne prendront d’eux même aucune mesure suffisante tant qu’ils ne seront pas touchés personnellement par <strong>l’effondrement écologique, social, énergétique et économique</strong>. Il est de notre responsabilité en tant que citoyen d’exiger de passer d’un système consumériste, destructeur, hiérarchique à un système sobre, coopératif et respectueux de toute vie.
@@ -63,7 +65,7 @@
       </section>
       <div id="concretely">
         <section class="corps" id="concretement">
-          <h2><span id="ancrecctm"></span>Concrètement ?</h2>
+          <h2><span id="et-concretement"></span>Concrètement ?</h2>
           <p>Rejoindre, Incarner et Propager l’onde bleue</p>
           <p>C'est :</p>
           <ol>
@@ -87,7 +89,7 @@
         </section>
       </div>
       <section class="corps" id="charte">
-        <h2><span id="ancrecharte"></span>Charte</h2>
+        <h2><span id="la-charte"></span>Charte</h2>
         <p>Nous avons choisis des engagements accessibles à tous dans la volonté de toucher un maximum de personnes. Si la charte paraissait trop extrême, trop drastique peu de gens rejoindraient le mouvement et il est temps d’unir le plus grand nombre de personnes. Chaque personne a une prise de conscience écologique différente et il est important d’intégrer le niveau de conscience de chacun si nous souhaitons rassembler. Pour les personnes ayant déjà mis en place tous ces engagements, vous pouvez aller plus loin en consultant le site : ça commence par moi. Nous demandons à chaque personne souhaitant rejoindre ce mouvement citoyen l’onde bleue de s’engager à respecter, dans un premier temps, au minimum 5 points dans la charte ci-dessous. </p><br>
         <p><i class="fas fa-pizza-slice"></i> <strong>Alimentation</strong></p>
         <ul>
@@ -128,7 +130,7 @@
       </section>
       <div id="aboutus">
         <section id="quisommesnous">
-          <h2 id="qsn"><span id="ancreqsn"></span>Qui sommes-nous ?</h2>
+          <h2 id="qsn"><span id="qui-sommes-nous"></span>Qui sommes-nous ?</h2>
           <div class="around-earth">
             <div class="circle"></div>
             <p>Qui sommes-nous ?<br><br>
