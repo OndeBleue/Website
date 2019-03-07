@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>L'Onde bleue</title>
-    <script src='shapes-polyfill.min.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -19,27 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.2/dist/smooth-scroll.polyfills.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8020731-9"></script> <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script>
-      // scroll to anchors
-      new SmoothScroll('a[href*="#"]', {
-        offset: 130
-      });
-      // show/hide small devices menu
-      function toggleMenu() {
-        const isShown = (document.getElementById('menu').style.display === 'flex');
-        if (isShown) {
-          document.getElementById('menu').style.display = 'none';
-        } else {
-          document.getElementById('menu').style.display = 'flex';
-        }
-      }
-      // google analytics
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-8020731-9');
-    </script>
+    <script src="index.js"></script>
   </head>
   <body>
     <nav class="main-menu">
