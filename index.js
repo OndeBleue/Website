@@ -5,7 +5,7 @@ new SmoothScroll('a[href*="#"]', {
 
 // show/hide small devices menu
 function toggleMenu() {
-  const isShown = (document.getElementById('menu').style.display === 'flex');
+  const isShown = (document.getElementById('menu').style.display === 'flex') && window.matchMedia('(max-width: 740px)').matches;
   if (isShown) {
     document.getElementById('menu').style.display = 'none';
   } else {
