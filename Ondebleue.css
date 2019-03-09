@@ -247,14 +247,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  #quisommesnous {
-    width: 90%;
-    margin: auto;
-  }
-}
-
-
-@media screen and (max-width: 1000px) {
   nav.main-menu ul {
     background: 10px / contain no-repeat url("logo_onde_bleue_notext.png");
   }
@@ -271,6 +263,10 @@ footer a:hover {
   }
   #logo {
     width: 40%;
+  }
+  #quisommesnous {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -365,5 +361,15 @@ footer a:hover {
   #menu {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .about-cookies {
+    left: 0;
+    right: 0;
+    width: auto;
+    background-size: 15%;
+    padding: 1em 7% 1em 16%;
   }
 }
