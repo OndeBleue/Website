@@ -176,7 +176,8 @@ section {
   text-align: left;
   color: #EAF4F7;
   font-size: 10pt;
-  width: 95%
+  width: 70%;
+  margin: auto;
 }
 
 #quisommesnous .circle {
@@ -184,33 +185,14 @@ section {
   float: left;
   width: 100%;
   margin-top: -153px;
-  shape-outside: circle(772px at calc(-1100px + (45vw * 1.8)) 688px)
+  shape-outside: circle(772px at calc(-1100px + (45vw * 1.8)) 688px);
+  display: none;
 }
 
-/* workarounds because shape-outside is not supported by MS browsers */
-/* Internet Explorer 10 & 11 */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  #quisommesnous {
-    width: 70%;
-    margin: auto;
-  }
-  #quisommesnous .circle { display: none; }
-}
-/* Internet Explorer 12 & 13 */
-@supports (-ms-accelerator:true) {
-  #quisommesnous {
-    width: 70%;
-    margin: auto;
-  }
-  #quisommesnous .circle { display: none; }
-}
-/* Edge */
-@supports (-ms-ime-align:auto) {
-  #quisommesnous {
-    width: 70%;
-    margin: auto;
-  }
-  #quisommesnous .circle { display: none; }
+/* New browers */
+@supports (shape-outside: circle()) {
+  #quisommesnous { width: 95%; }
+  #quisommesnous .circle { display: block; }
 }
 
 footer {
