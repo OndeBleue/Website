@@ -53,4 +53,5 @@ document.addEventListener("DOMContentLoaded", function() {
 function hideTeaser() {
   var element = document.getElementById("teaser-overlay");
   element.parentElement.removeChild(element);
+  document.getElementById("social-links").style.display = "flex";
 }

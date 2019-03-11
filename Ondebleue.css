@@ -48,6 +48,49 @@ nav.main-menu ul {
   margin-top: 4em;
 }
 
+@keyframes move-left {
+  from { right: -30px; }
+  to { right: 0; }
+}
+
+@keyframes move-right {
+  from { right: 0; }
+  to { right: -30px; }
+}
+
+#menu .social {
+  position: fixed;
+  right: 0;
+  top: 10vh;
+  width: 50px;
+  display: none;
+  flex-direction: column;
+}
+
+#menu .social img {
+  width: 50px;
+  height: 50px;
+}
+
+#menu .social img:hover {
+  filter: saturate(1.5);
+}
+
+#menu .social a {
+  display: block;
+  margin-top: 10px;
+  right: -30px;
+  position: relative;
+  animation: move-right 0.5s ease;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#menu .social a:hover {
+  right: 0;
+  animation: move-left 0.5s ease;
+}
+
 .corps {
   width: 70%;
   margin-left: auto;
@@ -328,6 +371,24 @@ footer a:hover {
     font-size: 18pt;
     border-bottom: 1px solid #cfcfcf;
     margin: 0 2em;
+  }
+  #menu .social {
+    position: inherit;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #menu .social a {
+    display: inline-block;
+    right: 0;
+    animation: none;
+  }
+  #menu .social a:hover {
+    animation: none;
+  }
+  #menu .social img {
+    height: 32px;
+    width: 32px;
   }
   #aboutus {
     background-position-x: center;
