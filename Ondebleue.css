@@ -24,14 +24,14 @@ nav.main-menu ul {
   background: rgba(0,0,0,0.9);
   z-index: 3;
   text-align: center;
-  padding: 10em;
+  padding: 10vh 10vw;
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 80vh;
   padding-top: 30px; height: 0; overflow: hidden;
-  top: -6em;
+  top: -5vh;
 }
 
 .video-container iframe,
