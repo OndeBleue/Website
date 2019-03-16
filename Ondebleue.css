@@ -45,6 +45,7 @@ nav.main-menu ul {
   height: 50px;
   z-index: 2;
   font-size: 16pt;
+  cursor: pointer;
 }
 
 .video-container .close-indicator i {
