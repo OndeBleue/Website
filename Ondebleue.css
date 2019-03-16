@@ -34,6 +34,24 @@ nav.main-menu ul {
   top: -5vh;
 }
 
+.video-container .close-indicator {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #cf842d;
+  color: white;
+  border-bottom-left-radius: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  font-size: 16pt;
+}
+
+.video-container .close-indicator i {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -443,5 +461,9 @@ footer a:hover {
     width: auto;
     background-size: 15%;
     padding: 1em 7% 1em 16%;
+    font-size: 10pt;
+  }
+  .about-cookies .close {
+    font-size: 16pt;
   }
 }
