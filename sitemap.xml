@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.onde-bleue.fr/</loc>
+        <lastmod>2019-03-18T14:48:53+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://www.onde-bleue.fr/app/</loc>
+        <lastmod>2019-03-18T14:48:53+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>

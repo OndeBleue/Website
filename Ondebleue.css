@@ -144,7 +144,7 @@ nav.main-menu ul {
   font-size: 16pt;
 }
 
-h3 {
+h1 {
   text-align: center;
   font-size: 2.5em;
   font-style: italic;
@@ -331,7 +331,7 @@ footer a:hover {
   .corps {
     width: 90%;
   }
-  h3 {
+  h1 {
     font-size: 1.8em;
   }
   #logo {
@@ -427,7 +427,7 @@ footer a:hover {
   h2 {
     font-size: 1.5em;
   }
-  h3 {
+  h1 {
     font-size: 1.5em;
   }
   p {
