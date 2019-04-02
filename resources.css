@@ -43,6 +43,8 @@ body {
   display: flex;
   width: calc(640px + 2em);
   margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .content .resources li {
@@ -51,6 +53,9 @@ body {
   padding: 1em;
   margin: 0.5em;
   height: calc(270px - 2em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content .resources li img {
