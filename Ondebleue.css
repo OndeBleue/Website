@@ -15,42 +15,12 @@ nav.main-menu ul {
   display: none;
 }
 
-.teaser {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.9);
-  z-index: 3;
-  text-align: center;
-  padding: 10vh 10vw;
-}
-
 .video-container {
   position: relative;
   padding-bottom: 80vh;
   padding-top: 30px; height: 0; overflow: hidden;
   top: -5vh;
-}
-
-.video-container .close-indicator {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #cf842d;
-  color: white;
-  border-bottom-left-radius: 50px;
-  width: 50px;
-  height: 50px;
-  z-index: 2;
-  font-size: 16pt;
-  cursor: pointer;
-}
-
-.video-container .close-indicator i {
-  margin-top: 10px;
-  margin-left: 5px;
+  margin-top: 9em;
 }
 
 .video-container iframe,
