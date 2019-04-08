@@ -45,6 +45,7 @@ body {
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-left: 0;
 }
 
 .content .resources li {
@@ -76,4 +77,44 @@ body {
   text-align: center;
   display: block;
   margin-top: 0.5em;
+}
+
+@media screen and (max-width: 671px) {
+  .content .resources {
+    width: calc(270px + 2em);
+  }
+
+  .header {
+    background: 10px / contain no-repeat url("logo_onde_bleue_notext.png");
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content h1 {
+    margin: 1.5em 0;
+  }
+  .header a {
+    width: 70px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 301px) {
+  .content h1 {
+    margin: 3em 0;
+  }
+
+  .content .resources {
+    width: 100%;
+  }
+
+  .content .resources li {
+    width: calc(100vw - 2em);
+    height: calc(100vw - 2em);
+  }
+  .content .resources li img {
+    max-width: calc(100vw - 4em);
+    max-height: calc(100vw - 4em);
+  }
 }
