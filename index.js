@@ -48,10 +48,3 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("cookies-info").style.display = 'block';
   }
 });
-
-// teaser
-function hideTeaser() {
-  var element = document.getElementById("teaser-overlay");
-  element.parentElement.removeChild(element);
-  document.getElementById("social-links").style.display = "flex";
-}
